@@ -3,7 +3,8 @@ FROM debian
 
 RUN apt-get update && apt-get install -y apache2 && apt-get install -y ufw
 
-CMD [ "sudo systemctl start apache2" ]
+# Inicia Apache2 al ejecutar el contenedor
+CMD ["apache2ctl", "-D", "FOREGROUND"]
 
 #RUN echo "Apache2 ha sido instalado con éxito."
 
