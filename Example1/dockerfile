@@ -1,2 +1,12 @@
-FROM centos
-RUN yum install httpd -y
+# Usa la imagen base de Debian
+FROM debian
+
+# Actualiza los repositorios e instala Apache2
+RUN apt-get update && apt-get install -y apache2
+
+# Agrega cualquier otra configuración o comandos necesarios
+
+# Indica que Apache2 se ha instalado correctamente
+RUN echo "Apache2 ha sido instalado con éxito."
+
+# Puedes agregar más instrucciones según tus necesidades
