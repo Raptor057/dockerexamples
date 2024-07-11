@@ -1,7 +1,7 @@
 @echo off
 
 :: Cambia al directorio de tu repositorio git
-cd /d C:\Dev\dockerexamples
+::cd /d C:\Dev\dockerexamples
 
 :: Muestra el estado de git
 git status
