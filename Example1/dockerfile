@@ -4,18 +4,9 @@ FROM debian
 # Actualiza los repositorios e instala Apache2
 RUN apt-get update && apt-get install -y apache2
 
-# Instala fnm (Fast Node Manager)
-RUN curl -fsSL https://fnm.vercel.app/install | bash
-
-# Descarga e instala Node.js
-RUN fnm use --install-if-missing 20
-
-# Verifica que la versión correcta de Node.js esté en el entorno
-RUN node -v # debería mostrar `v20.15.1`
-
-# Verifica que la versión correcta de NPM esté en el entorno
-RUN npm -v # debería mostrar `10.7.0`
+# Agrega cualquier otra configuración o comandos necesarios
 
 # Indica que Apache2 se ha instalado correctamente
 RUN echo "Apache2 ha sido instalado con éxito."
-RUN echo "NodeJS ha sido instalado con éxito."
+
+# Puedes agregar más instrucciones según tus necesidades
