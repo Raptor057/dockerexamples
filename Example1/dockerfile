@@ -1,8 +1,7 @@
 # Usa la imagen base de Debian
 FROM debian
 
-RUN apt-get update && apt-get install -y apache2 && apt-get install -y ufw
-RUN sudo ufw enable
+RUN apt-get update && apt-get install -y apache2 && apt-get install -y ufw && sudo ufw enable 
 RUN sudo ufw allow 'Apache'
 CMD [ "sudo systemctl start apache2" ]
 
