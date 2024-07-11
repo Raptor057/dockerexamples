@@ -3,7 +3,7 @@ FROM debian
 
 RUN apt-get update && apt-get install -y apache2
 
-RUN ufw allow 'Apache'
+RUN sudo ufw allow 'Apache'
 CMD [ "sudo systemctl start apache2" ]
 
 #RUN echo "Apache2 ha sido instalado con éxito."
