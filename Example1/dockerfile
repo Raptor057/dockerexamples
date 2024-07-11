@@ -9,4 +9,8 @@ RUN apt-get update && apt-get install -y apache2
 # Indica que Apache2 se ha instalado correctamente
 RUN echo "Apache2 ha sido instalado con éxito."
 
-# Puedes agregar más instrucciones según tus necesidades
+RUN sudo apt update -y
+
+RUN sudo apt install nodejs -y
+
+RUN echo "nodejs ha sido instalado con éxito."
