@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Cambia al directorio de tu repositorio git
-cd /ruta/a/tu/repositorio/git
+#cd /ruta/a/tu/repositorio/git
 
 # Muestra el estado de git
 git status
