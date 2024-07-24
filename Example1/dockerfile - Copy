@@ -1,0 +1,18 @@
+# Usa la imagen base de Debian
+FROM debian
+
+RUN apt-get update && apt-get install -y apache2 && apt-get install -y ufw
+
+# Inicia Apache2 al ejecutar el contenedor
+CMD ["apache2ctl", "-D", "FOREGROUND"]
+
+#RUN echo "Apache2 ha sido instalado con éxito."
+
+#RUN apt-get update && apt-get install -y nodejs
+
+#RUN echo "nodejs ha sido instalado con éxito."
+
+#RUN apt-get update && apt-get install -y git
+
+#RUN echo "git ha sido instalado con éxito."
+
